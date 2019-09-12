@@ -6,7 +6,7 @@
 /*   By: ajon-hol <ajon-hol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/12 11:26:07 by ajon-hol          #+#    #+#             */
-/*   Updated: 2019/09/12 16:43:35 by ajon-hol         ###   ########.fr       */
+/*   Updated: 2019/09/12 16:56:37 by ajon-hol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ static void	setmap(char *map, int size)
 
 void		solver(int figs[26])
 {
-	static char	map[2000];
+	static char	map[144];
 	int			size;
 	int			fig_count;
 

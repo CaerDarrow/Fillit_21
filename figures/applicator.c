@@ -6,7 +6,7 @@
 /*   By: ajon-hol <ajon-hol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/11 21:10:07 by ajon-hol          #+#    #+#             */
-/*   Updated: 2019/09/12 16:43:10 by ajon-hol         ###   ########.fr       */
+/*   Updated: 2019/09/12 16:57:34 by ajon-hol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,6 @@ int			applicator(char *map, int n[4], char c, int op_id)
 		res &= op[op_id](&map[n[1]], c);
 		res &= op[op_id](&map[n[2]], c);
 		res &= op[op_id](&map[n[3]], c);
-		// print(map);
-		// print("___________________\n");
 		return (res);
 	}
 	return (0);
