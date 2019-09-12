@@ -6,11 +6,11 @@
 /*   By: ajon-hol <ajon-hol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/12 11:23:55 by ajon-hol          #+#    #+#             */
-/*   Updated: 2019/09/12 17:23:07 by ajon-hol         ###   ########.fr       */
+/*   Updated: 2019/09/12 17:50:17 by ajon-hol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "figures.h"
+#include "fillit.h"
 #include <unistd.h>
 #include <fcntl.h>
 

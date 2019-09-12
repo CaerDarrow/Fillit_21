@@ -6,11 +6,11 @@
 /*   By: ajon-hol <ajon-hol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/11 21:10:07 by ajon-hol          #+#    #+#             */
-/*   Updated: 2019/09/12 16:57:34 by ajon-hol         ###   ########.fr       */
+/*   Updated: 2019/09/12 17:50:15 by ajon-hol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "figures.h"
+#include "fillit.h"
 #include <stdio.h>
 
 static int	check(char *c, char to_check)

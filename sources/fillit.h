@@ -1,32 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   tools.c                                            :+:      :+:    :+:   */
+/*   fillit.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ajon-hol <ajon-hol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/12 12:10:13 by ajon-hol          #+#    #+#             */
-/*   Updated: 2019/09/12 14:14:29 by ajon-hol         ###   ########.fr       */
+/*   Created: 2019/09/12 17:35:58 by ajon-hol          #+#    #+#             */
+/*   Updated: 2019/09/12 17:52:58 by ajon-hol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "figures.h"
-#include <unistd.h>
+#ifndef FILLIT_H
+# define FILLIT_H
+# include "figures/figures.h"
 
-int		length(void *ptr, int step)
-{
-	int len;
+enum		e_ops {
+	CHECK,
+	FILL,
+};
 
-	len = 0;
-	while (*(unsigned char *)ptr)
-	{
-		ptr += step;
-		len++;
-	}
-	return (len);
-}
+int			reader(char *fname, int figs[26]);
+int			applicator(char *map, int n[4], char c, int op_id);
+void		solver(int figs[26]);
+int			length(void *ptr, int step);
+void		print(char *str);
 
-void	print(char *str)
-{
-	write(1, str, length(str, sizeof(*str)));
-}
+#endif

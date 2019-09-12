@@ -1,43 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   l_shape_left.c                                     :+:      :+:    :+:   */
+/*   shape_sqr_line.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ajon-hol <ajon-hol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/11 20:41:51 by ajon-hol          #+#    #+#             */
-/*   Updated: 2019/09/12 16:01:44 by ajon-hol         ###   ########.fr       */
+/*   Created: 2019/09/11 20:41:36 by ajon-hol          #+#    #+#             */
+/*   Updated: 2019/09/12 17:36:53 by ajon-hol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	l1(int coords[4], int bias, int size)
-{
-	coords[0] = bias;
-	coords[1] = bias + size + 1;
-	coords[2] = bias + size + 2;
-	coords[3] = bias + size + 3;
-}
-
-void	l2(int coords[4], int bias, int size)
+void	s(int coords[4], int bias, int size)
 {
 	coords[0] = bias;
 	coords[1] = bias + 1;
-	coords[2] = bias + (size + 1);
-	coords[3] = bias + 2 * (size + 1);
+	coords[2] = bias + size + 1;
+	coords[3] = bias + size + 2;
 }
 
-void	l3(int coords[4], int bias, int size)
+void	i1(int coords[4], int bias, int size)
 {
+	(void)size;
 	coords[0] = bias;
 	coords[1] = bias + 1;
 	coords[2] = bias + 2;
-	coords[3] = bias + (size + 3);
+	coords[3] = bias + 3;
 }
 
-void	l4(int coords[4], int bias, int size)
+void	i2(int coords[4], int bias, int size)
 {
 	coords[0] = bias;
 	coords[1] = bias + size + 1;
-	coords[2] = bias + 2 * (size + 1) - 1;
-	coords[3] = bias + 2 * (size + 1);
+	coords[2] = bias + 2 * (size + 1);
+	coords[3] = bias + 3 * (size + 1);
 }

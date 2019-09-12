@@ -6,11 +6,11 @@
 /*   By: ajon-hol <ajon-hol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/12 11:26:07 by ajon-hol          #+#    #+#             */
-/*   Updated: 2019/09/12 16:56:37 by ajon-hol         ###   ########.fr       */
+/*   Updated: 2019/09/12 17:50:18 by ajon-hol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "figures.h"
+#include "fillit.h"
 
 static int	solve(int index, int figs[26], char *map, int size)
 {

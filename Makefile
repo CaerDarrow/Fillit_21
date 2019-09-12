@@ -1,8 +1,8 @@
 NAME = fillit
 RM = /bin/rm -rf
-INCLUDES = figures/
+INCLUDES = sources/
 CFLAGS = -Wall -Wextra -Werror -I$(INCLUDES)
-SRC = $(wildcard figures/*.c *.c)
+SRC = $(wildcard , sources/figures/*.c , sources/*.c , fillit.c)
 OBJ = $(SRC:.c=.o)
 all: $(OBJ) $(NAME)
 $(OBJ): %.o : %.c

@@ -1,27 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   fillit.c                                           :+:      :+:    :+:   */
+/*   tools.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ajon-hol <ajon-hol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/11 21:42:36 by ajon-hol          #+#    #+#             */
-/*   Updated: 2019/09/12 17:50:16 by ajon-hol         ###   ########.fr       */
+/*   Created: 2019/09/12 12:10:13 by ajon-hol          #+#    #+#             */
+/*   Updated: 2019/09/12 17:50:19 by ajon-hol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
+#include <unistd.h>
 
-int	main(int argc, char **argv)
+int		length(void *ptr, int step)
 {
-	static int	figs[26];
+	int len;
 
-	if (argc == 2)
+	len = 0;
+	while (*(unsigned char *)ptr)
 	{
-		if (reader(argv[1], figs))
-			solver(figs);
-		else
-			print("Error\n");
+		ptr += step;
+		len++;
 	}
-	return (0);
+	return (len);
+}
+
+void	print(char *str)
+{
+	write(1, str, length(str, sizeof(*str)));
 }
