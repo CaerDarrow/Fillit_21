@@ -1,5 +1,5 @@
 # Fillit_21
-## 21_school project
+## 21 school project
 
 ### Simple space optimization project.
 
